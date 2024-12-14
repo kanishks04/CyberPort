@@ -1,0 +1,209 @@
+/* background: #A2D2600F; */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #080F17;
+    color: #ffffff;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5vmax 1vmax;
+    background-color: #A2D2600F;
+    width: 80%;
+    margin: auto;
+    margin-top: 1vmax;
+    border-radius: 20px;
+}
+header h1 {
+    font-size: 2.4vmax;
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+header nav {
+    display: flex;
+    flex: 1;
+}
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 1.5vmax;
+    font-size: 1.1vmax;
+}
+header nav a:hover {
+    color: #00ff00;
+}
+.nav-left {
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;
+}
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+.hero {
+    text-align: center;
+    padding: 5vmax 2vmax;
+}
+.hero h2 {
+    font-size: 4.8vmax;
+    margin: 3vmax 0;
+}
+.hero img{
+    height: 80vh;
+    width: 90vw;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2vmax;
+}
+.gallery img {
+    width: 25vw;
+    height: 35vh;
+    border-radius: 1vmax;
+}
+.gallery-item {
+    width: 30%;
+    margin: 1vmax;
+    text-align: left;
+}
+.gallery-item h3{
+    font-size: 1.8vmax;
+    margin: 0 0;
+}
+.gallery-item p{
+    font-size: 1vmax;
+}
+.showcase-item button {
+    background-color: #00ff00;
+    border: none;
+    padding: 1vmax 2vmax;
+    color: #000000;
+    font-size: 1.6vmax;
+    border-radius: 0.5vmax;
+    cursor: pointer;
+}
+.showcase-item button:hover {
+    background-color: #00cc00;
+}
+.contact {
+    text-align: center;
+    padding: 5vmax 2vmax;
+    background-color: #1a1a1a;
+}
+.contact h3 {
+    font-size: 2.4vmax;
+    margin: 0 0 2vmax;
+}
+.contact p {
+    font-size: 1.8vmax;
+    margin: 1vmax 0 3vmax;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact input, .contact textarea {
+    width: 80%;
+    max-width: 50vmax;
+    padding: 1vmax;
+    margin: 1vmax 0;
+    border: 1px solid #333333;
+    border-radius: 0.5vmax;
+    background-color: #333333;
+    color: #ffffff;
+}
+.contact .input {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1vmax;
+    width: 80%;
+    max-width: 50vmax;
+}
+.contact .input input {
+    flex: 1;
+    min-width: 10vmax;
+}
+.contact button {
+    background-color: #00ff00;
+    border: none;
+    padding: 1vmax 2vmax;
+    color: #000000;
+    font-size: 1.6vmax;
+    border-radius: 0.5vmax;
+    cursor: pointer;
+}
+.contact button:hover {
+    background-color: #00cc00;
+}
+.social {
+    text-align: center;
+    padding: 2vmax;
+}
+.social h3{
+    font-size: 1.5vmax;
+}
+.social input {
+    padding: 1vmax 5vmax;
+    margin: 1vmax 1vmax;
+    border: 1px solid #333333;
+    border-radius: 0.5vmax;
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 1.6vmax;
+}
+.social button {
+    background-color: #00ff00;
+    border: none;
+    padding: 1vmax 2vmax;
+    color: #000000;
+    font-size: 1.6vmax;
+    border-radius: 0.5vmax;
+    cursor: pointer;
+}
+.social button:hover {
+    background-color: #00cc00;
+}
+.social i {
+    font-size: 2.4vmax;
+    margin: 0 1vmax;
+    color: #ffffff;
+}
+.social i:hover {
+    color: #00ff00;
+}
+@media (max-width: 768px) {
+    .gallery-item, .showcase-item {
+        width: 45%;
+    }
+    .contact .input {
+        flex-direction: column;
+    }
+}
+@media (max-width: 480px) {
+    .gallery-item, .showcase-item {
+        width: 100%;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav {
+        justify-content: center;
+    }
+    header h1 {
+        margin: 1vmax 0;
+    }
+}
